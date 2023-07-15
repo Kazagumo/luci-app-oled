@@ -521,8 +521,8 @@ void testnetspeed(int mode, int y)
     {
         fscanf(fp,"%d %d", &rx, &tx);
         fclose(fp);
-        rx = rx;
-        tx = tx;
+        rx = rx / 8;
+        tx = tx / 8;
         switch(mode)
         {
         case SPLIT:
